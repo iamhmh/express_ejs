@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+        <main>
+            <div class="ui segment">
+                <h1>Salutations</h1>
+                <p>EJS</p>
+            </div>
+            <h2>Variable</h2>
+                <p><%= soustitre %></p>
+            <ul>
+                <% personne.forEach(function(personne){ %>
+                    <li class="ui segment">
+                        <strong><%= personne.name %></strong>
+                        est <%= personne.designation %> à l'université.
+                    </li>
+                <% }) %>
+            </ul>
+        </main>
+
+        <footer>
+        <%- include('partials/footer') %>
+        </footer>
+
+    </body>
+
+</html>
